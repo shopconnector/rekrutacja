@@ -36,7 +36,8 @@ class Basket
             $this->basketContainer[$item['id']]['count']++;
         }
 
-        $this->basketContainer[$item['id']]['value'] = $item['price'] * $this->basketContainer[$item['id']]['count']; 
+        $this->basketContainer[$item['id']]['value'] = $item['price'] * 
+            $this->basketContainer[$item['id']]['count']; 
 
         $this->saveState();
     }
@@ -69,10 +70,5 @@ class Basket
         }
 
         return $totalValue; 
-    }
-
-    public function __destruct()
-    {
-        $this->saveState();
     }
 }
