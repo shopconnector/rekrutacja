@@ -1,0 +1,15 @@
+my_basket_index:
+    path:     /
+    defaults: { _controller: MyBasketBundle:Default:index }
+
+my_basket_add_item:
+    path:     /basket/add_item/{id}
+    defaults: { _controller: MyBasketBundle:Default:addItem }
+
+my_basket_remove_item: 
+    path:     /basket/remove_item/{id}
+    defaults: { _controller: MyBasketBundle:Default:removeItem }     
+
+my_basket_clear_basket:
+    path:     /basket/clear_basket
+    defaults: { _controller: MyBasketBundle:Default:clearBasket } 

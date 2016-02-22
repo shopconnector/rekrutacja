@@ -1,0 +1,7 @@
+services:
+#    my_basket.example:
+#        class: My\BasketBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    my.basket:
+        class: My\BasketBundle\Utils\Basket
+        arguments: ["@session"]
